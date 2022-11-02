@@ -5,7 +5,7 @@ export function paraMaiusculo(texto) {
   console.log(texto.toUpperCase())
 };
 
-export class Pessoa {
+export default class Pessoa {
   static #ultimaId = 0
   #id
 

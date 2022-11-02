@@ -1,8 +1,7 @@
-import {
+import
   Pessoa,
-  nomeGenerico as nome,
-  paraMaiusculo
-} from "./Pessoa.js";
+  { paraMaiusculo, nomeGenerico as nome }
+from "./Pessoa.js";
 
 paraMaiusculo(nome);
 
@@ -19,4 +18,3 @@ romeu.caminha()
 console.log(
   Pessoa.isPessoa(romeu)
 );
-
