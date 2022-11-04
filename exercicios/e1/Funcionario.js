@@ -1,15 +1,28 @@
 
 export default class Funcionario {
+  #cpf
+
   constructor(cpf, nomeCompleto, salario) {
-    if (Funcionario.validaCPF(cpf)) {
+    this.#cpf = cpf
+    this.nomeCompleto = nomeCompleto
+    this.salario = salario
+  }
+
+  get cpf() {
+    return this.#cpf
+  }
+
+  get cpfNumero() {
+    return parseInt(this.#cpf.replaceAll('.', '').replaceAll('-', ''))
+  }
+
+  set cpf(novoCpf) {
+    if (Funcionario.validaCPF(novoCpf)) {
       console.log('CPF válido!');
+      this.#cpf = novoCpf
     } else {
       console.log('CPF inválido!');
     }
-
-    this.cpf = cpf
-    this.nomeCompleto = nomeCompleto
-    this.salario = salario
   }
 
   promover(percentual) {

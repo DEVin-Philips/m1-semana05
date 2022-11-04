@@ -9,3 +9,8 @@ console.log(ada.salario) // 1000
 ada.promover(50)
 
 console.log(ada.salario) // 1500
+
+ada.cpf = "578.071.270-07"
+
+console.log(ada.cpf)
+console.log(ada.cpfNumero)
