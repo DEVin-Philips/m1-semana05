@@ -7,8 +7,26 @@
   <title>Exercício 8 [M1-S05]</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <script src="app.js" type="module"></script>
+
+  <style>
+    #login-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+  </style>
 </head>
 <body>
   <h1>Exercício 8 [M1-S05]</h1>
+
+  <div id="login-container">
+    <label for="campo-usuario">Usuário</label>
+    <input type="text" id="campo-usuario" name="usuario" placeholder="E-mail">
+    <label for="campo-senha">Senha</label>
+    <input type="password" id="campo-senha" name="senha" placeholder="Senha" >
+    <button id="botao-acessar">Acessar</button>
+    <p id="p-mensagem"></p>
+  </div>
 </body>
 </html>

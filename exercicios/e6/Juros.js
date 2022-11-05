@@ -10,7 +10,8 @@ export default class Juros {
   // i: Taxa de jutos % (de 0 a 1)
   // t: Período de tempo
   // J: Montante de juros simples
-  // M: Montante de capital inicial + juros compostos
+  // M: Montante de juros compostos mais Capital inicial
+  // Jc: M - C
 
   calcularJurosSimples() {
     // J = C * i * t
